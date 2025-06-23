@@ -1,5 +1,5 @@
 {
-  "name": "amp-wp-postcss",
+  "name": "@ampagency/amp-postcss-config",
   "version": "1.0.0",
   "description": "A PostCSS configuration for Amp WP projects",
   "main": "index.js",
