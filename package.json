@@ -1,0 +1,28 @@
+{
+  "name": "amp-wp-postcss",
+  "version": "1.0.0",
+  "description": "A PostCSS configuration for Amp WP projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ampagency/amp-wp-postcss.git"
+  },
+  "author": "Amp Agency",
+  "bugs": {
+    "url": "https://github.com/ampagency/amp-wp-postcss/issues"
+  },
+  "peerDependencies": {
+    "10up-toolkit": "^6.4.1",
+    "postcss-at-rules-variables": "^0.3.0",
+    "postcss-each": "^1.1.0",
+    "postcss-functions": "^4.0.2",
+    "postcss-gap-properties": "^6.0.0",
+    "postcss-nested": "^7.0.2",
+    "postcss-pxtorem": "^6.1.0",
+    "postcss-simple-vars": "^7.0.1"
+  },
+  "homepage": "https://github.com/ampagency/amp-wp-postcss#readme"
+}

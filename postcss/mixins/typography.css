@@ -1,0 +1,23 @@
+@define-mixin text-styles-display $version {
+	font-family: var(--wp--preset--font-family--sans-serif);
+	font-size: var(--wp--preset--font-size--display-$(version));
+	font-weight: var(--wp--custom--font-weight--extra-bold);
+	letter-spacing: var(--wp--custom--letter-spacing--normal);
+	line-height: var(--wp--custom--line-height--display-$(version));
+}
+
+@define-mixin text-styles-heading $version {
+	font-family: var(--wp--preset--font-family--sans-serif);
+	font-size: var(--wp--preset--font-size--heading-$(version));
+	font-weight: var(--wp--custom--font-weight--extra-bold);
+	letter-spacing: var(--wp--custom--letter-spacing--normal);
+	line-height: var(--wp--custom--line-height--heading-$(version));
+}
+
+@define-mixin text-styles-paragraph $version {
+	font-family: var(--wp--preset--font-family--serif);
+	font-size: var(--wp--preset--font-size--paragraph-$(version));
+	font-weight: var(--wp--custom--font-weight--normal);
+	letter-spacing: var(--wp--custom--letter-spacing--normal);
+	line-height: var(--wp--custom--line-height--paragraph-$(version));
+}
