@@ -4,14 +4,16 @@ const additionalPlugins = require('./lib/plugins');
 const mixins = require('./lib/mixins');
 const functions = require('./lib/functions');
 
-module.exports = ({
-	customAdditionalPlugins = {},
-	customPreloadPlugins = {},
-	customMixins = {},
-	customVariables = {},
-	customFunctions = {},
-} = {}) => {
-	const config = baseConfig();
+module.exports = (props) => {
+	const {
+		customAdditionalPlugins = {},
+		customPreloadPlugins = {},
+		customMixins = {},
+		customVariables = {},
+		customFunctions = {},
+		...rest
+	} = props;
+	const config = baseConfig(rest);
 
 	if (config.plugins['postcss-preset-env']) {
 		config.plugins['postcss-preset-env'].stage = 0;
@@ -33,7 +35,7 @@ module.exports = ({
 				variables() {
 					// eslint-disable-next-line global-require
 					return {
-						...require('./variables'),
+						...require('./lib/variables'),
 						...customVariables,
 					};
 				},
