@@ -1,0 +1,27 @@
+@define-mixin debug-grid-col {
+	/* stylelint-disable-next-line scale-unlimited/declaration-strict-value */
+	background-color: #ff000025;
+}
+
+@define-mixin grid-col $col: 12 {
+	display: block;
+	grid-column: span $col;
+}
+
+@define-mixin grid-offset $span: 12, $offset: 1 {
+	display: block;
+	grid-column: $offset / span $span;
+}
+
+@define-mixin amp-grid {
+	column-gap: var(--amp-grid-gutter);
+	display: grid;
+	grid-template-columns: repeat(var(--amp-grid-cols), 1fr); /* matches design, 4 cols on mobile. */
+	margin-left: auto;
+	margin-right: auto;
+	max-width: var(--layout-wide-size);
+
+	@media (--bp-tablet) {
+		grid-template-columns: repeat(12, 1fr);
+	}
+}
