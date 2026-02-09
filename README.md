@@ -63,3 +63,7 @@ To build or watch styles:
 npm run build      # One-time build
 npm run watch      # Dev server with HMR
 ```
+
+## Publishing to NPM
+
+To publish to npm, run `npm publish --access public`.
